@@ -1,0 +1,12 @@
+Sandu Galbokka Hewa
+Project 5
+May 4, 2025
+Linux
+No bugs
+
+For this project, the goal was to find the minimal total cost to connect all the rooms. When I looked at the input file, I noticed that each line listed two rooms and a cost, which looked like the first step of Kruskal’s Algorithm. So, I decided to implement it using that algorithm. I started by sorting all the connections based on cost.
+
+At first, I tried keeping track of the connections using an array of lists. I checked if two rooms were in different lists, and if they were, I combined them. But this method turned out to be inefficient and had a time complexity worse than O(n²).
+
+Then I looked at the notes to see how Kruskal’s Algorithm actually works and saw that it uses Union-Find. I created a parent vector sized to the number of unique rooms, where each room is represented by a number. At first, I initialized each room to be its own parent. Then, while going through each sorted pair, I checked who their parents were. If both rooms had the same parent, they were already connected, so I skipped it. If not, I set one’s parent to the other’s to connect them and added their connection cost to the total minimum cost.
+
