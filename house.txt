@@ -1,0 +1,10 @@
+Bedroom Garage		110
+Garage Kitchen		175
+Kitchen Bedroom		200
+Kitchen Office		90
+Laundry Bedroom		35
+Library Kitchen		25
+Library Office		100
+Office Game		30
+Office Laundry		70
+Office Bedroom		90
